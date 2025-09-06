@@ -205,12 +205,6 @@ header ul li a:hover {
     .left-one {
         display: none !important;
     }
-    .right {
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 }
 
 .two-h {
@@ -604,41 +598,52 @@ footer h4 {
     color: #ccc;
 }
 
-
-/* على الشاشات الصغيرة (الموبايل) */
-
-@media (max-width: 768px) {
+@media (max-width: 980px) {
+    body {
+        background-color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .bus {
+        max-width: 100%;
+    }
+    .one {
+        width: 100%;
+        display: block;
+    }
+    .two-img {
+        width: 100%;
+    }
+    .back_one {
+        max-width: 100%;
+    }
     .nav__btns {
         display: none !important;
     }
-    .right {
-        width: 1%;
-        display: flex;
-    }
-    .bus {}
     .three {
         display: block;
     }
-    /* اخفي الكارد الأول اللي على الشمال */
     .two .card:first-child {
         display: none !important;
     }
-    /* خلي الكروت تاخد العرض كامل تحت بعض */
     .two {
         flex-direction: column;
         width: 100%;
     }
     .two .card {
         width: 100%;
-        margin-bottom: 20px;
     }
-    /* خلي الصور والنصوص تبقا 100% */
-    .back_one,
     .left-imge img,
     .right-conten,
     .card-fiv,
     .card-fin {
-        width: 100% !important;
+        width: 90% !important;
+        display: block;
+    }
+    .four-contener {
         display: block;
     }
     .fife-card {
@@ -648,6 +653,10 @@ footer h4 {
         display: block;
     }
     .footer {
-        width: 100%;
+        max-width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
